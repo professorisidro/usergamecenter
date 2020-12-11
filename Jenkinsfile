@@ -30,6 +30,7 @@ pipeline {
       }
       stage ('Deploy'){
       	steps{
+            sh 'chmdor +x ./deploy.sh'
       	   sh 'sudo ./deploy.sh'
       	}
       }

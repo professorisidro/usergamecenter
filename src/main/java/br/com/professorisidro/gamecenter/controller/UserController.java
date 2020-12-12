@@ -54,5 +54,10 @@ public class UserController {
 			return "S:"+user.getName()+"|"+user.getNick();
 		}
 	}
+	
+	@GetMapping("/hello")
+	public String sayHello() {
+		return "Hello! It Works!";
+	}
 
 }
